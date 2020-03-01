@@ -1,0 +1,21 @@
+body {
+    font-family: 'Contrail One';
+    background-color: white;
+}
+
+h1 {
+    size: 40px;
+    margin: auto;
+}
+
+header {
+    margin: auto;
+    align-items: center;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: white;
+    position: relative;
+    border-bottom: steelblue;
+}

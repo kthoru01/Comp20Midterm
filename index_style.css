@@ -1,5 +1,5 @@
 body {
-    font-family: 'Contrail One';
+    font-family: 'Contrail One', 'Ariel';
     background-color: white;
 }
 
@@ -11,11 +11,51 @@ h1 {
 header {
     margin: auto;
     align-items: center;
-}
-
-.topnav {
     overflow: hidden;
     background-color: white;
     position: relative;
     border-bottom: steelblue;
+}
+
+header #navbar {
+    display: none;
+}
+
+header a {
+    color: steelblue;
+    padding: 12px 14px;
+    font-size: 20px;
+    text-decoration: none;
+    right: 0;
+    top: 0;
+}
+
+.header a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.aboutLink {
+    text-decoration: none;
+    color: #000;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
 }

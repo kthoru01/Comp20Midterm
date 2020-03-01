@@ -8,32 +8,47 @@
     <meta name=Assignment content="Comp20 Midterm">
     <meta name="Description" content="Galleria">
     <link href="https://fonts.googleapis.com/css?family=Contrail+One&display=swap" rel="stylesheet">
-
-    <title>
-        Galleria
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="index_style.css" />
+    <title> Galleria
     </title>
 </head>
 
 
 <body>
     <header>
-        <h1> Galleria </h1>
+        <h1 style="text-align: center;"> Galleria </h1>
+        <a href="#Home" class="active">Home</a>
         <div id="navbar">
-            <div id="Home">Home</div>
-            <div id="About">About</div>
-            <div id="Contact">Contact</div>
-            <div id="Portfolio">Portfolio</div>
-            <div id="Services">Services</div>
-            <div id="Review">Review</div>
+            <a href="#about.html">About</div>
+            <a href="#contact.html">Contact</div>
+            <a href="#portfolio.html">Portfolio</div>
+            <a href="#services.html">Services</div>
+            <a href="#review.html">Review</div>
         </div>
+        <a href="javascript:void(0);" class="icon" onclick="navFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+            <script language="javascript">
+                function navFunction() {
+                    var links = document.getElementById("navbar");
+                    if (links.style.display == "block") {
+                        links.style.display = "none";
+                    } else {
+                        links.style.display = "block";
+                    }
+                }
+            </script>
     </header>
-
     <section>
-        <h2>Welcome to Galleria</h2><br />
-
+        <h2> Welcome to Galleria</h2><br />
+        <div id="welcome_description">
+            At Galleria, we're making arts and exhibitions more interactive than ever before. Want to learn more about us?
+            <a href="about.html" id="aboutLink">Read here</a>
+        </div>
     </section>
 
     <footer>
-        <p> © Galleria.Inc 2020 | All Rights Reserved </p>
+        <p>©Galleria.Inc 2020 | All Rights Reserved</p>
     </footer>
 </body>
